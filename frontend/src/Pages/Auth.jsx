@@ -73,6 +73,7 @@ const Auth = ({ type }) => {
     if (callbackurl) {
       console.log("B replace", callbackurl);
       const _callbackurl = callbackurl.replace(window.location.origin, "");
+      console.log(window.location.origin);
       console.log("A replace", callbackurl);
       setTimeout(() => navigate(_callbackurl), 500);
       return null;
