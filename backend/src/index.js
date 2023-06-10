@@ -17,5 +17,5 @@ app.use(route)
 
 
 
-const port = 3004
+const port = process.env.PORT|| 3004
 app.listen(port,()=>console.log('server running on port '+port));
