@@ -72,7 +72,7 @@ const Auth = ({ type }) => {
   if (User) {
     if (callbackurl) {
       console.log(window.location);
-      const _callbackurl = callbackurl.replace("http://localhost:3000", "");
+      const _callbackurl = callbackurl.replace(window.location.origin, "");
       setTimeout(() => navigate(_callbackurl), 500);
       return null;
     } else {
