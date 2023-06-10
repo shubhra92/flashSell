@@ -1,5 +1,6 @@
 import axios from "axios";
-const server = 'http://localhost:3004'
+// const server = 'http://localhost:3004'
+import { SERVER } from "../../config";
 
 
 // create user
@@ -10,7 +11,7 @@ export const setUser = (token) => async (dispatch) => {
       });
       let user = null
       if(token){
-      const {data} = await axios.get(`${server}/token`,{headers:{Authorization:`Bearer ${token}`}})
+      const {data} = await axios.get(`${SERVER}/token`,{headers:{Authorization:`Bearer ${token}`}})
       user = data
       }
       dispatch({

@@ -1,2 +1,2 @@
 export const server = "https://fakestoreapi.com"
-export const SERVER = "http://localhost:3004"
+export const SERVER = "https://flashsell-production.up.railway.app"

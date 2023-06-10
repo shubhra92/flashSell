@@ -5,8 +5,8 @@ import { useCookies } from "react-cookie";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Input from "../components/Input";
+import { SERVER as server } from "../config";
 import { setUser } from "../redux/action/user";
-const server = "http://localhost:3004";
 const userApi = {
   create: `${server}/user/signup`,
   login: `${server}/user/login`,
